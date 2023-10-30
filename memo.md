@@ -16,3 +16,6 @@
 
 - [参考](https://www.wantedly.com/companies/rakus/post_articles/139373)
 
+# API取得
+- [DjangoでAPI呼び出し](https://qiita.com/egplnt/items/9cc0dec14d1b3eb7e34c)
+
