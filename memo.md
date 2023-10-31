@@ -16,6 +16,20 @@
 
 - [参考](https://www.wantedly.com/companies/rakus/post_articles/139373)
 
-# API取得
+# 機能追加
+## API取得
 - [DjangoでAPI呼び出し](https://qiita.com/egplnt/items/9cc0dec14d1b3eb7e34c)
 
+# cookieの設定/呼び出し
+- [Cookieの設定/呼び出し]https://sleepless-se.net/2020/08/01/how-to-set-cookie-in-django/
+- cookie 
+  - 簡単に確認できてしまうためセキュリティとしては弱い
+  - 基本設定ではCookieを受け取ったサーバ（Domain)とは異なるWebサーバに対してはCookieを送らない
+- セッション
+  - セッションIDをCookieに設定する
+  - Webブラウザを閉じるまで保存
+
+# スクレイピング
+- [スクレイピングのやり方](https://ai-inter1.com/python-webscraping/)
+- Pythonで実行する場合は専用のライブラリが存在する
+- scraping.pyに作成

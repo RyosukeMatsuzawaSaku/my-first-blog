@@ -1,3 +1,5 @@
+import re
+from bs4 import BeautifulSoup
 from django.utils import timezone
 from django.shortcuts import redirect, render, get_object_or_404
 from .models import Post,Comment
@@ -110,6 +112,8 @@ def forecast(request):
     print("response_list", weather['list'][0]['main']['temp'])
 
     return render(request, 'blog/weather.html', {'city': city, 'temp': temp,  'cond': cond})
+    
+
 
 
 
