@@ -6,6 +6,8 @@
 # よく使うコマンド
 - サーバを起動
   - python manage.py runserver
+- アクセス
+  - http://127.0.0.1:8000
 
 # Linuxコマンド
 ## yum
@@ -42,9 +44,19 @@
   - ディストリビューションはS3、オリジンはALBを指定するとのこと
 
 ## コンテナ化
-- DockerFileとdocker-compose.yamlを事前に準備する
 - [docker-compose](https://qiita.com/tegnike/items/bcdcee0320e11a928d46)
+- [削除コマンド](https://qiita.com/boiyama/items/9972601ffc240553e1f3)
+
+- DockerFileとdocker-compose.yamlを事前に準備する
+  - DockerFileは一つのDockerImageの作成方法が記載されているファイル
+  - docker-compose.yamlは複数のDockerFileやコンテナを起動するテンプレートファイル
 - `docker compose run -d` でバックグラウンドで起動
+- `docker image ls`
+- `docker rmi <イメージID>`
+- `docker ps -a`
+- `docker start/stop <コンテナ名>`
+- `docker rm <コンテナ名>`
+- `docker exec -it <コンテナ名> /bin/bash`
 
 ## dockerイメージをPush
 - [push手順](https://qiita.com/blueskyarea/items/7ddd5441d9212c5a6570)
